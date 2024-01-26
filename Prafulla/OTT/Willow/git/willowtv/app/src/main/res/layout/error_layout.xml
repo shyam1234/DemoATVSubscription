@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/error_screen_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/error_image"
+        android:layout_width="@dimen/error_icon_width"
+        android:layout_height="@dimen/error_icon_height"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/no_video_error" />
+
+    <TextView
+        android:id="@+id/error_title"
+        style="@style/TvFontFamilyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/error_page_title_text_size"
+        tools:text="Video Not Found" />
+
+    <TextView
+        android:id="@+id/error_detail"
+        style="@style/TvFontFamilyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/error_page_detail_text_size"
+        tools:text="Video Not Found" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToHomeButton"
+        style="@style/TvFontFamilyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_rounded_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/backToHomeButton"
+        android:nextFocusRight="@id/backToHomeButton"
+        android:nextFocusUp="@id/backToHomeButton"
+        android:nextFocusDown="@id/backToHomeButton"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+</LinearLayout>

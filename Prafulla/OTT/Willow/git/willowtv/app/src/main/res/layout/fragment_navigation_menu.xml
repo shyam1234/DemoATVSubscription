@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_nav_menu_open"
+    android:layout_width="wrap_content"
+    android:maxWidth="@dimen/nav_menu_open_vertical_tab_w"
+    android:paddingStart="@dimen/nav_menu_item_padding_start"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:paddingVertical="@dimen/nav_menu_holder_vertical_padding">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_nav_menu_logo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/nav_menu_company_logo_h"
+        android:focusable="false"
+        android:paddingStart="2dp"
+        android:scaleType="fitCenter"
+        android:maxWidth="@dimen/nav_menu_open_vertical_tab_w"
+        android:layout_marginVertical="@dimen/nav_menu_vertical_item_gap"
+        android:src="@drawable/willow_logo_in_closed_state"
+        app:layout_constraintEnd_toEndOf="@id/rv_nav_menu_dynamic_items_holder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_nav_menu_dynamic_items_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/nav_menu_vertical_item_gap"
+        android:nextFocusLeft="@id/rv_nav_menu_dynamic_items_holder"
+        android:nextFocusUp="@id/rv_nav_menu_dynamic_items_holder"
+        android:nextFocusDown="@id/ib_nav_menu_profile"
+        app:layout_constraintBottom_toTopOf="@id/ib_nav_menu_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_nav_menu_logo" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_nav_menu_dummy"
+        android:layout_width="@dimen/nav_menu_item_w"
+        android:layout_height="@dimen/nav_menu_item_h"
+        app:layout_constraintBottom_toTopOf="@id/ib_nav_menu_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        android:background="@color/transparent"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_nav_menu_profile"
+        android:layout_width="@dimen/nav_menu_item_w"
+        android:layout_height="@dimen/nav_menu_item_h"
+        android:background="@drawable/nav_menu_item_selector"
+        android:focusable="false"
+        android:nextFocusLeft="@id/ib_nav_menu_profile"
+        android:nextFocusUp="@id/rv_nav_menu_dynamic_items_holder"
+        android:nextFocusDown="@id/ib_nav_menu_setting"
+        android:layout_marginBottom="@dimen/nav_menu_vertical_profile_setting_gap"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_menu_profile_icon"
+        app:layout_constraintBottom_toTopOf="@id/ib_nav_menu_setting"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ib_nav_menu_setting"
+        android:layout_width="@dimen/nav_menu_item_w"
+        android:layout_height="@dimen/nav_menu_item_h"
+        android:background="@drawable/nav_menu_item_selector"
+        android:focusable="false"
+        android:nextFocusLeft="@id/ib_nav_menu_setting"
+        android:nextFocusUp="@id/ib_nav_menu_profile"
+        android:nextFocusDown="@id/ib_nav_menu_setting"
+        android:layout_marginBottom="@dimen/nav_menu_margin_bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_menu_help_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_nav_menu_profile"
+        android:layout_width="@dimen/nav_menu_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nav_menu_item_text_gap"
+        android:text="@string/nav_menu_profile"
+        android:textSize="@dimen/nav_menu_item_text_norm_size"
+        android:visibility="gone"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintBottom_toBottomOf="@id/ib_nav_menu_profile"
+        app:layout_constraintStart_toEndOf="@id/ib_nav_menu_profile"
+        app:layout_constraintTop_toTopOf="@id/ib_nav_menu_profile" />
+
+    <TextView
+        android:id="@+id/textview_nav_menu_setting"
+        android:layout_width="@dimen/nav_menu_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nav_menu_item_text_gap"
+        android:text="@string/nav_menu_help"
+        android:textSize="@dimen/nav_menu_item_text_norm_size"
+        android:visibility="gone"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintBottom_toBottomOf="@id/ib_nav_menu_setting"
+        app:layout_constraintStart_toEndOf="@id/ib_nav_menu_setting"
+        app:layout_constraintTop_toTopOf="@id/ib_nav_menu_setting" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LaunchFragment">
+
+    <fragment
+        android:id="@+id/LaunchFragment"
+        android:name="com.willow.android.tv.ui.login.LaunchLoginFragment"
+        android:label="@string/launch_fragment"
+        tools:layout="@layout/fragment_launch_login">
+
+        <action
+            android:id="@+id/action_Launch_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.willow.android.tv.ui.login.LoginFirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_login_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_First_to_SignupFragment"
+            app:destination="@id/SignupFragment" />
+
+        <action
+            android:id="@+id/action_LoginActivity_to_MainActivity"
+            app:destination="@id/MainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.willow.android.tv.ui.login.EmailLoginFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_email_login">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignupFragment"
+        android:name="com.willow.android.tv.ui.login.SignupFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_email_login">
+
+        <action
+            android:id="@+id/action_SignupFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/MainActivity"
+        android:name="com.willow.android.tv.ui.main.MainActivity"
+        android:label="Main Activity"
+        tools:layout="@layout/activity_main">
+
+    </activity>
+
+
+</navigation>

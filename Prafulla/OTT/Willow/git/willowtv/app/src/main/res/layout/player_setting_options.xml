@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/player_settings_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_12dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/quality_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_26dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/bg_player_settings_option"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_1dp">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_slidershorizontal" />
+
+        <TextView
+            android:id="@+id/textview_quality_label"
+            android:layout_width="@dimen/dimen_85dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_7dp"
+            android:gravity="center_vertical"
+            android:text="Quality"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <com.willow.android.tv.ui.playback.SettingsSpinner
+            android:id="@+id/setting_spinner_quality"
+            android:layout_width="@dimen/dimen_96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_6dp"
+            android:background="@drawable/bg_player_settings_spinner_normal"
+            android:dropDownVerticalOffset="@dimen/dimen_30dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingEnd="@dimen/dimen_20dp"
+            android:popupBackground="@color/player_settings_spinner_bg"
+            android:spinnerMode="dropdown"
+            android:textSize="@dimen/dimen_12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/speed_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_26dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@drawable/bg_player_settings_option"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_1dp">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_playcircle" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_85dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7dp"
+            android:gravity="center_vertical"
+            android:text="Playback Speed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <com.willow.android.tv.ui.playback.SettingsSpinner
+            android:id="@+id/setting_spinner_play_speed"
+            android:layout_width="@dimen/dimen_96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_6dp"
+            android:background="@drawable/bg_player_settings_spinner_normal"
+            android:dropDownVerticalOffset="@dimen/dimen_30dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingEnd="@dimen/dimen_20dp"
+            android:popupBackground="@color/player_settings_spinner_bg"
+            android:spinnerMode="dropdown"
+            android:textSize="@dimen/text_12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/subtitle_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_26dp"
+        android:background="@drawable/bg_player_settings_option"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_1dp">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_closedcaptioning" />
+
+
+        <TextView
+            android:layout_width="@dimen/dimen_85dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_7dp"
+            android:gravity="center_vertical"
+            android:text="Subtitles"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <com.willow.android.tv.ui.playback.SettingsSpinner
+            android:id="@+id/setting_spinner_subtitles"
+            android:layout_width="@dimen/dimen_96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_6dp"
+            android:background="@drawable/bg_player_settings_spinner_normal"
+            android:dropDownVerticalOffset="@dimen/dimen_30dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingEnd="@dimen/dimen_20dp"
+            android:popupBackground="@color/player_settings_spinner_bg"
+            android:spinnerMode="dropdown"
+            android:textSize="@dimen/dimen_12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

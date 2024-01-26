@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <gradient
+        android:endColor="@color/gradient_end_hero_banner_color"
+        android:centerColor="@color/gradient_center_hero_banner_color"
+        android:startColor="@color/gradient_start_hero_banner_color"
+        android:type="linear"/>
+</shape>

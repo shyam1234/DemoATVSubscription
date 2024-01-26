@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    android:background="@color/window_bg_color"
+    tools:context=".tv.ui.pointtable.PointTableGroupFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginVertical="@dimen/dimen_10dp"
+        android:background="@color/transparent"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout" />
+
+    <include
+        android:id="@+id/loadingview"
+        layout="@layout/layout_progress_indicator"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

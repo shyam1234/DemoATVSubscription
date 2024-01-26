@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style.TabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabGravity">start</item>
+        <item name="tabMode">scrollable</item>
+        <item name="android:gravity">start</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabSelectedTextColor">@color/button_default</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+        <item name="tabBackground">@drawable/tab_color_selector</item>
+        <item name="tabIndicatorColor">@color/button_default</item>
+        <item name="tabRippleColor">@color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabMaxWidth">200dp</item>
+        <item name="tabMinWidth">@dimen/tab_layout_left_margin</item>
+        <item name="tabPaddingStart">@dimen/tab_layout_left_margin</item>
+        <item name="tabPaddingEnd">@dimen/tab_layout_left_margin</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+
+    <style name="ChipTextAppearance" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/color_chip_text</item>
+        <item name="android:textSize">@dimen/chip_text_size</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="MediaBtnAppearance">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_width">@dimen/media_button_width</item>
+        <item name="android:layout_height">@dimen/media_button_height</item>
+    </style>
+
+    <style name="BtnAppearance" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_background_color_selector</item>
+        <item name="android:textColor">@color/button_text_color_selector</item>
+        <item name="android:paddingStart">@dimen/dimen_20dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_20dp</item>
+        <item name="android:layout_margin">@dimen/dimen_20dp</item>
+        <item name="android:radius">@dimen/dimen_3dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="ClickFocuseBtnAppearance" parent="BtnAppearance">
+        <item name="android:background">@drawable/click_change_button_background_color_selector
+        </item>
+        <item name="android:textColor">@color/click_change_button_text_color_selector</item>
+    </style>
+
+    <style name="SubscriptionBtnAppearance" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_background_color_selector</item>
+        <item name="android:textColor">@color/button_text_color_selector</item>
+        <item name="android:paddingStart">@dimen/dimen_5dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_5dp</item>
+        <item name="android:layout_margin">@dimen/dimen_5dp</item>
+        <item name="android:radius">@dimen/dimen_3dp</item>
+    </style>
+
+    <style name="SkipBtnAppearance" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_background_color_selector_tansparent</item>
+        <item name="android:textColor">@color/button_text_color_selector</item>
+    </style>
+
+    <style name="DialogThemeTv" parent="@style/Theme.MaterialComponents.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="TvFontFamilyStyle">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TvFontFamilyStyleRegular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TvFontFamilyStyleBold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--for mobile-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog.MinWidth">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:height">70dp</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CastButtonTheme" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--end of mobile-->
+    <style name="scoreBoardRow" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_10sp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="scoreBoardRowScore" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_10sp</item>
+        <item name="android:gravity">end</item>
+    </style>
+    <style name="matchInfoheading" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="scoreBoardHeader" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="scoreBoardHeaderScore" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="scoreBoardExtraData" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="scoreBoardExtrascore" parent="scoreBoardExtraData">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="scorecardTotal" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="scorecardTotalEnd" parent="TvFontFamilyStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="blueBox">
+        <item name="android:background">@color/point_table_text_bg_color</item>
+        <item name="android:padding">@dimen/dimen_15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="sub_plan_change_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/subscription_disc</item>
+        <item name="android:padding">@dimen/dimen_10dp</item>
+        <item name="android:drawablePadding">@dimen/dimen_2dp</item>
+    </style>
+
+    <style name="sub_change_plan_text">
+        <item name="android:textColor">@color/neutral_grey_BDC2C2</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="sub_change_plan_text_value">
+        <item name="android:textColor">@color/subscription_value_color</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+</resources>

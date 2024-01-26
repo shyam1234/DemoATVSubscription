@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/others_page_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tve_provider_border"
+        android:textColor="@color/shipGray"
+        android:gravity="center" />
+
+</androidx.cardview.widget.CardView>

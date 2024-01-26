@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@drawable/button_solid_shape_focussed_stroke"/>
+            <item android:drawable="@drawable/ic_button_previous" android:top="10dp" android:bottom="10dp" android:left="10dp" android:right="10dp"/>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:drawable="@drawable/button_solid_shape_default"/>
+            <item android:drawable="@drawable/ic_previous_disabled"  android:top="10dp" android:bottom="10dp" android:left="10dp" android:right="10dp"/>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/button_solid_shape_default"/>
+            <item android:drawable="@drawable/ic_button_previous"  android:top="10dp" android:bottom="10dp" android:left="10dp" android:right="10dp"/>
+        </layer-list>
+    </item>
+
+
+</selector>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hero_banner_height"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/imageview_carousel_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_herobanner" />
+
+    <com.bitmovin.player.PlayerView
+        android:id="@+id/carousel_with_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageview_carousel_bg_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/herobanner_left_gradient_shape"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageview_carousel_bg_gradient1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/herobanner_bottom_gradient_shape"
+        android:visibility="visible" />
+
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <androidx.leanback.tab.LeanbackViewPager
+        android:id="@+id/view_pager_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/content_description_view_pager" />
+
+    <LinearLayout
+        android:id="@+id/lin_indicator_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/carousel_indicator_margin_bottom"
+        android:focusable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/point_table_item_header_bg"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen_10dp"
+        android:paddingVertical="@dimen/dimen_5dp">
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:layout_weight="2.5"
+            android:gravity="start"
+            android:text="Teams" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="Played" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="Won" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="Lost" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="Tied" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="N/R" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="Net RR" />
+
+        <TextView
+            style="@style/PointTableHeaderItemTextView"
+            android:text="Points" />
+
+    </LinearLayout>
+</layout>

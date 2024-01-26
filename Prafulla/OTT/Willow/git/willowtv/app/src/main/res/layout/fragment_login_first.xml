@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tv.ui.login.LoginFirstFragment"
+   >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:src="@drawable/bg_signin_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/start_gradient_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/logoWillow"
+        android:src="@drawable/willow_logo_in_open_state"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="@dimen/textSize_login_title"
+        android:textFontWeight="400"
+        android:layout_marginTop="15dp"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoWillow" />
+
+    <TextView
+        android:id="@+id/txtLoginTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_sign_up_with_willow"
+        android:textSize="@dimen/textSize_login_subtitle"
+        android:textStyle="bold"
+        android:layout_marginStart="75dp"
+        android:textFontWeight="500"
+        style="@style/TvFontFamilyStyle"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+    <TextView
+        android:id="@+id/txtDesc1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:text="@string/watch_live_cricket_in_hd"
+        android:textSize="@dimen/textSize_login_subtitle3"
+        style="@style/TvFontFamilyStyle"
+        app:drawableStartCompat="@drawable/ic_blue_check_circle"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtLoginTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginTitle" />
+
+
+    <TextView
+        android:id="@+id/txtDesc2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="10dp"
+        android:text="@string/replays_highlights"
+        android:textSize="@dimen/textSize_login_subtitle3"
+        style="@style/TvFontFamilyStyle"
+        app:drawableStartCompat="@drawable/ic_blue_check_circle"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtLoginTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc1" />
+
+
+    <TextView
+        android:id="@+id/txtDesc3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="10dp"
+        android:text="@string/interactive_scorecard_commentary"
+        android:textSize="@dimen/textSize_login_subtitle3"
+        style="@style/TvFontFamilyStyle"
+        app:drawableStartCompat="@drawable/ic_blue_check_circle"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txtLoginTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc2" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:id="@+id/imgDivider"
+        android:src="@drawable/img_divider"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/textview_first"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/button_email_login"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textAllCaps="false"
+        style="@style/TvFontFamilyStyle"
+        app:backgroundTint="#4A5050"
+        app:layout_constraintStart_toStartOf="@id/txtLoginTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc3" />
+
+    <TextView
+        android:id="@+id/txtLoginWithTVTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_tv_provider"
+        android:textSize="@dimen/textSize_login_subtitle"
+        android:textStyle="bold"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:textFontWeight="500"
+        style="@style/TvFontFamilyStyle"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+    <TextView
+        android:id="@+id/txtLoginWithTVDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/you_can_also_enjoy_willow_if_you_have_subscription_of_any_of_below_listed_providers"
+        android:textSize="@dimen/textSize_login_subtitle3"
+        android:textFontWeight="400"
+        style="@style/TvFontFamilyStyle"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/txtLoginWithTVTitle"
+        app:layout_constraintStart_toStartOf="@id/txtLoginWithTVTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginWithTVTitle" />
+
+
+
+    <ImageView
+        android:id="@+id/imgFooter1"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@id/txtLoginWithTVTitle"
+        app:layout_constraintStart_toStartOf="@id/txtLoginWithTVTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginWithTVDesc"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_tv_provider"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textAllCaps="false"
+        app:backgroundTint="#4A5050"
+        app:layout_constraintStart_toStartOf="@id/txtLoginWithTVTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <TextView
+        android:id="@+id/txtFooter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tons_of_cricket_matches_infomation"
+        android:textSize="@dimen/textSize_login_subtitle"
+        android:textAlignment="center"
+        android:textFontWeight="400"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_email_login" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tab_layout_left_margin"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/button_tv_login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

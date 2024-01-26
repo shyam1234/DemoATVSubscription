@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="LoginViewModel"
+            type="com.willow.android.tv.ui.login.viewmodel.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.EmailLoginFragment">
+
+
+        <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_willow_tv"
+            android:textSize="@dimen/textSize_login_title"
+            android:textFontWeight="400"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/txtLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_or_sign_in"
+            android:textSize="@dimen/textSize_login_subtitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="75dp"
+            android:textFontWeight="700"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_second"
+            app:layout_constraintHorizontal_bias="0"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear1"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/txtLoginTitle"
+            app:layout_constraintTop_toBottomOf="@id/txtLoginTitle"
+            app:layout_constraintHorizontal_bias="0">
+
+            <ImageView
+                android:id="@+id/iconLoginEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_email"
+                android:background="@drawable/login_et_icon_bg_selector"
+                android:padding="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/email_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@={LoginViewModel.email}"
+                android:inputType="textEmailAddress"
+                android:hint="Email ID"
+                android:padding="10dp"
+                style="@style/TvFontFamilyStyle"
+                android:nextFocusDown="@id/password_textview"
+                android:background="@drawable/edittext_selector"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear2"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/txtLoginTitle"
+            app:layout_constraintTop_toBottomOf="@id/linear1"
+            app:layout_constraintHorizontal_bias="0">
+
+            <ImageView
+                android:id="@+id/iconLoginPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_password"
+                android:background="@drawable/login_et_icon_bg_selector"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/password_textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@={LoginViewModel.password}"
+                android:inputType="textPassword"
+                android:hint="Password"
+                style="@style/TvFontFamilyStyle"
+                android:padding="10dp"
+                android:background="@drawable/edittext_selector"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:onClick="@{(v) -> LoginViewModel.onClick(v)}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/TvFontFamilyStyle"
+            android:nextFocusDown="@+id/txtForgotPass"
+            android:textAllCaps="false"
+            app:backgroundTint="#4A5050"
+            app:layout_constraintStart_toStartOf="@id/linear2"
+            app:layout_constraintTop_toBottomOf="@id/linear2" />
+
+        <TextView
+            android:id="@+id/txtForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/textSize_login_subtitle"
+            android:layout_marginTop="20dp"
+            android:textFontWeight="500"
+            android:focusable="true"
+            android:padding="5dp"
+            style="@style/TvFontFamilyStyle"
+            android:background="@drawable/textview_selector"
+            app:layout_constraintStart_toStartOf="@id/button_second"
+            app:layout_constraintTop_toBottomOf="@id/button_second"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <TextView
+            android:id="@+id/txtVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit"
+            android:textSize="@dimen/textSize_login_subtitle2"
+            android:padding="3dp"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:textFontWeight="400"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintStart_toStartOf="@id/button_second"
+            app:layout_constraintTop_toBottomOf="@id/txtForgotPass"
+            app:layout_constraintVertical_bias="0.15"/>
+
+        <TextView
+            android:id="@+id/txtVisitLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.willow.tv/resetpassword"
+            android:textSize="@dimen/textSize_login_subtitle2"
+            android:padding="3dp"
+            android:textColor="@color/help_faq_link_color"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:textFontWeight="400"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintStart_toEndOf="@id/txtVisit"
+            app:layout_constraintTop_toBottomOf="@id/txtForgotPass"
+            app:layout_constraintVertical_bias="0.15"/>
+        <include
+            android:id="@+id/loadingview"
+            layout="@layout/layout_progress_indicator"
+            android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

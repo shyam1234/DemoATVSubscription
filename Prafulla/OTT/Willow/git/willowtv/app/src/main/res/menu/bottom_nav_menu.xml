@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home_page"
+        android:icon="@drawable/navigation_selector_home"
+        android:title="@string/title_home_page" />
+
+    <item
+        android:id="@+id/navigation_videos_page"
+        android:icon="@drawable/navigation_selector_videos"
+        android:title="@string/title_videos_page" />
+
+    <item
+        android:id="@+id/navigation_results_page"
+        android:icon="@drawable/navigation_selector_results"
+        android:title="@string/title_results_page" />
+
+    <item
+        android:id="@+id/navigation_fixtures_Page"
+        android:icon="@drawable/navigation_selector_fixtures"
+        android:title="@string/title_fixtures_page" />
+
+    <item
+        android:id="@+id/navigation_settings_page"
+        android:icon="@drawable/navigation_selector_more"
+        android:title="@string/title_settings_page" />
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.willow.android.tv.ui.scoreCardMatchInfo.model.MatchInfoParaData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/matchInfoheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@{model.heading}"
+            tools:text="jnhjbvhjsdfbdhj"/>
+
+        <TextView
+            style="@style/matchInfoheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model.para}"
+            tools:text="jnhjbvhjsdfbdhj"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--new design for expandable cards-->
+    <LinearLayout
+        android:id="@+id/expandable_text_holder"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/card_live_tag_start_padding"
+        android:layout_marginBottom="@dimen/card_live_tag_start_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expandable_text_holder_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:letterSpacing="0.02"
+            android:maxLines="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_24sp"
+            android:textStyle="bold"
+            style="@style/TvFontFamilyStyle"
+            tools:text="Afghanistan tour of United Arab Emirates 2023 " />
+
+        <TextView
+            android:id="@+id/expandable_text_holder_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:letterSpacing="0.02"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="normal"
+            style="@style/TvFontFamilyStyle"
+            tools:text="3 ODI | 3 TEST" />
+
+        <TextView
+            android:id="@+id/expandable_text_holder_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#313535"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_10sp"
+            android:textStyle="normal"
+            style="@style/TvFontFamilyStyle"
+            tools:text="India tour of Australia 2023" />
+    </LinearLayout>
+</merge>

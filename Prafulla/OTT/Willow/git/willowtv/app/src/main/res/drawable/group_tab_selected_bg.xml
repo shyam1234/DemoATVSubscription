@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:gravity="bottom"
+        android:end="@dimen/dimen_20dp"
+        android:start="@dimen/dimen_20dp">
+        <shape>
+            <size android:height="2dp" />
+            <solid android:color="@color/group_tab_selected_bottom_color" />
+        </shape>
+    </item>
+</layer-list>
