@@ -18,5 +18,5 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "gitWillow"
+rootProject.name = "gitwillow"
 include ':app'
