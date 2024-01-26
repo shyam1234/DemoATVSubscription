@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.willow.android.tv.ui.scoreCardMatchInfo.model.ScorecardHeader" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/header_bg"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/scorecard_header_padding">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guildline_mid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvPlayer"
+                style="@style/scoreBoardHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{model.isBatting?@string/batting:@string/bowling}"
+                tools:text="@string/batting" />
+
+            <TextView
+                android:id="@+id/tvPlayerStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TvFontFamilyStyle"
+                android:visibility="@{model.isBatting?View.VISIBLE:View.GONE}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guildline_mid"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tvPlayerRun"
+                style="@style/scoreBoardHeaderScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{model.isBatting?@string/r:@string/o}"
+                tools:text="@string/r" />
+
+            <TextView
+                android:id="@+id/tvPlayerBowl"
+                style="@style/scoreBoardHeaderScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{model.isBatting?@string/b:@string/m}"
+                tools:text="@string/b" />
+
+            <TextView
+                android:id="@+id/tvPlayer4s"
+                style="@style/scoreBoardHeaderScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{model.isBatting?@string/_4s:@string/r}"
+                tools:text="@string/_4s"
+                />
+
+            <TextView
+                android:id="@+id/tvPlayer6s"
+                style="@style/scoreBoardHeaderScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{model.isBatting?@string/_6s:@string/w}"
+                tools:text="@string/_6s"
+                />
+
+            <TextView
+                android:id="@+id/tvPlayerSR"
+                style="@style/scoreBoardHeaderScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@{model.isBatting?@string/sr:@string/econ}"
+                tools:text="@string/sr"
+                />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guildline_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

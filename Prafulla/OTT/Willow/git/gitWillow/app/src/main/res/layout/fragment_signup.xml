@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="LoginViewModel"
+            type="com.willow.android.tv.ui.login.viewmodel.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.EmailLoginFragment">
+
+        <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="@dimen/text_title"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <EditText
+            android:id="@+id/name_textview"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@={LoginViewModel.name}"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+
+        <EditText
+            android:id="@+id/email_textview"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@={LoginViewModel.email}"
+            android:inputType="textEmailAddress"
+            android:hint="Email ID"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_textview" />
+
+        <EditText
+            android:id="@+id/password_textview"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@={LoginViewModel.password}"
+            android:inputType="textPassword"
+            android:hint="Password"
+            style="@style/TvFontFamilyStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_textview" />
+
+        <Button
+            android:id="@+id/button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            style="@style/TvFontFamilyStyle"
+            android:onClick="@{(v) -> LoginViewModel.onClickRegister(v)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_textview" />
+
+        <include
+            android:id="@+id/loadingview"
+            layout="@layout/layout_progress_indicator"
+            android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

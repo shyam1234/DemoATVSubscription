@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.willow.android.tv.ui.subscription.model.SubscriptionPaymentSuccessfulModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_dark"
+        android:gravity="center">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subscription_plan_bg"
+            android:backgroundTint="@color/color_30344A"
+            android:padding="@dimen/dimen_40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guideline_left"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_green_tick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_succesful"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subscription_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_midle"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <TextView
+                    android:id="@+id/txtPlanTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plan"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+                <TextView
+                    android:id="@+id/tXtTransactionIdTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction_id"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+                <TextView
+                    android:id="@+id/tXtPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+                <TextView
+                    android:id="@+id/tXtTransactionDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction_date"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+                <TextView
+                    android:id="@+id/tXtRenewalDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renewal_date"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+                <TextView
+                    android:id="@+id/tXtRenewalPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renewal_price"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+                <TextView
+                    android:id="@+id/tXtPaymentMethodTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_method"
+                    android:textColor="@color/subscription_attribute_color"
+                    android:textSize="@dimen/subscription_disc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_midle"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <TextView
+                    android:id="@+id/tXtPlanValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.plan}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="Annual" />
+
+                <TextView
+                    android:id="@+id/tXtTransactionIdValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.transactionID}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="12345683823" />
+
+                <TextView
+                    android:id="@+id/tXtPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.price}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="$9.99" />
+
+                <TextView
+                    android:id="@+id/tXtTransactionDateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.transactionDate}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="27th Nov 2019 " />
+
+                <TextView
+                    android:id="@+id/tXtRenewalDateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.renewalDate}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="27th Dec 2019 " />
+
+                <TextView
+                    android:id="@+id/tXtRenewalPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.renewalPrice}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="$9.99" />
+
+                <TextView
+                    android:id="@+id/tXtPaymentMethodValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.paymentMethod}"
+                    android:textColor="@color/subscription_value_color"
+                    android:textSize="@dimen/subscription_disc"
+                    tools:text="Credit Card " />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_homeButton"
+                style="@style/ClickFocuseBtnAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_of_cricket"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_midle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

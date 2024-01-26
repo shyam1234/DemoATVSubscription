@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <!-- Warm dark gray for backgrounds -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_dark">#1D202D</color>
+    <color name="transparent">#001D202D</color>
+    <color name="gray_dark_1">#bb1D202D</color>
+    <color name="gray_dark_2">#dd1D202D</color>
+    <color name="gray_dark_3">#1D202D</color>
+    <color name="gray_dark_4">#441D202D</color>
+
+
+    <!--default window color-->
+    <color name="window_bg_color">@color/gray_dark</color>
+
+    <!--left nav menu-->
+    <color name="left_open_nav_menu">@color/gray_dark</color>
+    <color name="extended_left_open_nav_menu">@color/gray_dark_1</color>
+    <color name="left_closed_nav_menu">@color/gray_dark</color>
+
+   <!--gradient color for hero banner-->
+    <color name="gradient_start_hero_banner_color">@color/gray_dark_3</color>
+    <color name="gradient_center_hero_banner_color">@color/gray_dark_4</color>
+    <color name="gradient_end_hero_banner_color">@color/transparent</color>
+
+    <!--gradient black color-->
+    <color name="gradient_start_color_card">#000000</color>
+    <color name="gradient_center_color_card">#000000</color>
+    <color name="gradient_end_color_card">#00000000</color>
+
+    <!-- Colors defined dedicated for TV screen white. -->
+    <color name="screen_white">#E8EAED</color>
+    <color name="screen_white_70">#B2E8EAED</color>
+    <color name="screen_white_60">#99E8EAED</color>
+    <color name="screen_white_10">#1AE8EAED</color>
+
+    <!-- Colors defined dedicated for TV screen black. -->
+    <color name="default_text_color">@color/screen_white</color>
+    <color name="default_text_color_secondary">@color/screen_white_60</color>
+
+    <color name="action_button_ripple_color">@color/black</color>
+    <color name="action_button_background_focused_color">@color/screen_white</color>
+    <color name="action_button_background_unfocused_color">@color/screen_white_10</color>
+    <color name="action_button_text_unfocused_color">@color/screen_white_70</color>
+
+    <color name="error_text">#EF9A9A</color>
+
+    <color name="button_pressed">#FFFFFF</color>
+    <color name="button_focused">#FFFFFF</color>
+    <color name="button_default">#313535</color>
+    <color name="button_default_4A5050">#4A5050</color>
+
+    <color name="card_background_selected">@color/white</color>
+    <color name="card_background_unselected">@color/transparent</color>
+    <color name="hero_banner_subtitle_color">#AFAFAF</color>
+    <color name="tab_background_selected">@color/transparent</color>
+    <color name="tab_background_unselected">@color/transparent</color>
+    <color name="nav_menu_item_unactive">#D9DADA</color>
+    <color name="nav_menu_item_active">#ffffff</color>
+    <color name="nav_menu_vertical_lin_color">#E01E25</color>
+    <color name="color_unselected_indicator">#889191</color>
+    <color name="color_selected_indicator">#ffffff</color>
+    <color name="color_chip_bg">#313535</color>
+    <color name="color_chip_text">#FFFFFF</color>
+    <color name="red">#F30606</color>
+    <color name="persian_blue">#0AA3FF</color>
+    <color name="login_et_color1">#40465C</color>
+    <color name="login_et_color2">#3C425D</color>
+
+    <color name="neutral_grey">#E5E6E6</color>
+    <color name="neutral_grey_BDC2C2">#BDC2C2</color>
+    <color name="neutral_grey_B5B5B5">#B5B5B5</color>
+    <color name="neutral_grey_B0B5B5">#B0B5B5</color>
+    <color name="help_faq_menu_selected_bg">#61636C</color>
+    <color name="help_faq_menu_text">#D7DADA</color>
+    <color name="help_faq_menu_focused_bg">#D7DADA</color>
+    <color name="help_faq_focused_button_background">#61636C</color>
+    <color name="help_faq_details_view_background">#66171A24</color>
+    <color name="help_faq_list_view_background">#1D202D</color>
+    <color name="error_screen_background">@color/window_bg_color</color>
+    <color name="help_faq_default_text_color">#CACECE</color>
+    <color name="help_faq_details_text_color">#B5B5B5</color>
+    <color name="help_faq_link_color">#0086D6</color>
+    <color name="help_faq_tv_provider_color">#E5E6E6</color>
+    <color name="subscription_attribute_color">#BDC2C2</color>
+    <color name="subscription_button_color">#4A5050</color>
+    <color name="subscription_value_color">#E5E6E6</color>
+    <color name="color_30344A">#30344A</color>
+    <color name="color_626A6A">#626A6A</color>
+    <color name="neutral">#A2A9A9</color>
+    <color name="persian_blue_0086D6">#0086D6</color>
+    <color name="group_tab_selected_bottom_color">#C82929</color>
+
+    <!--for mobile-->
+    <color name="page_header_background">#0D0B33</color>
+    <color name="page_header_title">#FFFFFF</color>
+    <color name="page_header_subtitle">#81808B</color>
+    <color name="blue_title">#0D0B39</color>
+    <color name="blue_title_gradient">#00000080</color>
+    <color name="button_blue">#666EE8</color>
+    <color name="button_purple">#633C81</color>
+    <color name="button_red">#EA4435</color>
+    <color name="divider">#F4F4FE</color>
+    <color name="expandable_header_background">#F5E5C7CC</color>
+    <color name="expandable_header_divider">#F4F4FE</color>
+    <color name="fixture_card_match_name">#000000</color>
+    <color name="fixture_card_series_name">#858585</color>
+    <color name="gradient">#0D0A39</color>
+    <color name="header_tab_background_sel">#5354E2</color>
+    <color name="header_tab_background">#E5E5EA</color>
+    <color name="header_tab_text_sel">#FFFFFF</color>
+    <color name="header_tab_text">#8F8E93</color>
+    <color name="header_tab">#5354E2</color>
+    <color name="iap_text">#0D0B39</color>
+    <color name="inning_tab_sel">#BEC2F2</color>
+    <color name="player_overlay">#00000080</color>
+    <color name="popup_background">#0E122ACC</color>
+    <color name="filter_popup_background">#CC0d1229</color>
+    <color name="result_card_match_name">#858585</color>
+    <color name="result_card_series_name">#000000</color>
+    <color name="score_cell_black">#F6F6F6</color>
+    <color name="score_header_background">#3350516D</color>
+    <color name="score_header">#191C2D</color>
+    <color name="score_summary_background">#80F6F6F6</color>
+    <color name="section_header_background">#F4F4FF</color>
+    <color name="section_header_title">#0D0A33</color>
+    <color name="team_lost">#43414A</color>
+    <color name="team_won">#0D0B39</color>
+    <color name="video_title">#434149</color>
+    <color name="video_sel_background">#e3e5f7</color>
+    <color name="button_background_gray">#ebebeb</color>
+    <color name="commentary_four">#6185E1</color>
+    <color name="commentary_six">#B589F7</color>
+    <color name="commentary_wicket">#E34E68</color>
+    <color name="commentary_video">#63B5DC</color>
+    <color name="scorecard_cell">#FFf6f6f6</color>
+    <color name="placeholder_text">#33000000</color>
+    <color name="stadium_text">#d4d4d4</color>
+    <color name="tve_title">#050416</color>
+    <color name="tve_other_net_text">#CC000000</color>
+    <color name="headerBackground">#F4F4FF</color>
+    <color name="blueButton">#B8BAF4</color>
+    <color name="seriesName">#868686</color>
+    <color name="matchName">#000000</color>
+    <color name="teamOneColor">#0D0B39</color>
+    <color name="teamTwoColor">#868686</color>
+    <color name="violet">#FF0D0B39</color>
+    <color name="layoutBackground">#FFF6F7FF</color>
+    <color name="black_10_per_opacity">#1A000000</color>
+    <color name="comet_20_per_opacity">#3350516D</color>
+    <color name="black_60_per_opacity">#99000000</color>
+    <color name="black_70_per_opacity">#B3000000</color>
+    <color name="mirage">#FF191C2D</color>
+    <color name="settingSubtitle">#88000000</color>
+    <color name="settingSubtitleWhite">#88FFFFFF</color>
+    <color name="malibu">#FF7898FF</color>
+    <color name="wildWatermelon">#FFFE5577</color>
+    <color name="orange">#FF5722</color>
+    <color name="comet">#FF50516D</color>
+    <color name="cornflowerBlue">#FF666EE8</color>
+    <color name="active_green">#FF0D910D</color>
+    <color name="inactive_red">#FFd9544F</color>
+    <color name="black_40_per_opacity">#66000000</color>
+    <color name="comet_60_per_opacity">#CC50516D</color>
+    <color name="comet_80_per_opacity">#CC50516D</color>
+    <color name="chambray">#FF39579A</color>
+    <color name="alto">#FFDDDDDD</color>
+    <color name="shipGray">#FF43414A</color>
+    <color name="bottom_tab_highlight">#307CF6</color>
+    <color name="bottom_tab_normal">#969696</color>
+    <color name="collapse_header">#CCf5E5C7</color>
+    <color name="label_background">#5eb7f7</color>
+    <color name="scorecard_title">#1a1c2e</color>
+    <color name="scorecard_subtitle">#99000000</color>
+    <color name="scorecard_title_cell">#3350516d</color>
+    <color name="hot_pink">#FFFF7BC0</color>
+    <color name="white_60_per_opacity">#CCFFFFFF</color>
+    <color name="selected_profile_icon_color">#CA1B21</color>
+    <color name="profile_icon">#D7DADA</color>
+    <color name="playback_shadow_bg">#88000000</color>
+    <color name="mauve">#FFD9A4FF</color>
+    <color name="violet_60_per_opacity">#990D0B39</color>
+    <color name="point_table_text_bg_color">#0076BD</color>
+    <color name="point_table_item_header_bg">#2B3044</color>
+    <color name="dialog_box_bg">#4C5158</color>
+    <!--end of mobile-->
+
+    <!--    scorecard-->
+    <color name="header_bg">#2B3044</color>
+    <color name="scorecard_total_bf">#004670</color>
+
+    <color name="player_settings_bg">#2B3044</color>
+    <color name="player_settings_spinner_bg">#495172</color>
+
+    <color name="carousel_btn_defult_text_color">#A2A9A9</color>
+    <color name="carousel_btn_selected_text_color">#000000</color>
+    <color name="carousel_btn_default_color">#313535</color>
+    <color name="carousel_btn_selected_color">#A2A9A9</color>
+</resources>

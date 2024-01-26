@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_15dp"
+    android:background="@color/window_bg_color"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <TextView
+        android:id="@+id/tvMainTableTitle"
+        android:layout_width="0dp"
+        style="@style/blueBox"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        tools:text="fggcgfcghvghvvghv"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubTableTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/blueBox"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMainTableTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMainTable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvBottomText"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainTableTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvBottomText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="fggcgfcghvghvvghv"
+        android:textSize="@dimen/text_12sp"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rvMainTable"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/fow" />
+
+    <TextView
+        android:id="@+id/fow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fall_of_wickets"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_10sp"
+        style="@style/TvFontFamilyStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rvMainTable"
+        app:layout_constraintTop_toTopOf="@+id/tvBottomText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSubTable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubTableTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvSubTableTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTableTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

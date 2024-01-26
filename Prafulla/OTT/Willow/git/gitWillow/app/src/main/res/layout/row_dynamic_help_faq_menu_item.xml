@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.willow.android.tv.data.repositories.helpfaq.datamodel.Setting" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_menu_vertical_item_gap">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_menu_item"
+            android:layout_width="@dimen/setting_menu_width"
+            android:layout_height="@dimen/setting_menu_height"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingEnd="0dp"
+            android:text="@{model.title}"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            android:gravity="start|center"
+            style="@style/TvFontFamilyStyle"/>
+
+    </RelativeLayout>
+</layout>

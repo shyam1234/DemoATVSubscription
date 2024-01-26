@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Willow</string>
+    <string name="content_description_view_pager">use to hold different pages of an app</string>
+    <string name="tab_layout_content_description">tab layout for main fragment</string>
+    <string name="profile_content_description">login btn place holder</string>
+    <string name="imageview_content_description">logo place holder</string>
+    <string name="login">Login</string>
+    <string name="card_image_description">it holds card image</string>
+    <string name="nav_menu_help">Help</string>
+    <string name="nav_menu_profile">Profile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="preview">Preview</string>
+    <string name="vs">VS</string>
+    <string name="match_center">Match Center</string>
+    <string name="watch_live">Watch Live</string>
+    <string name="tons_of_cricket_matches_infomation"><![CDATA[Tons of cricket matches & Information]]></string>
+    <string name="interactive_scorecard_commentary"><![CDATA[Interactive scorecard & commentary]]></string>
+    <string name="replays_highlights"><![CDATA[Replays & highlights]]></string>
+    <string name="watch_live_cricket_in_hd">Watch live cricket in HD</string>
+    <string name="login_or_signup">Login or Signup</string>
+    <string name="login_with_tv_provider">Login with TV Provider</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="signup">Signup</string>
+    <string name="login_sign_up_with_willow">Login/Sign up with Willow</string>
+    <string name="you_can_also_enjoy_willow_if_you_have_subscription_of_any_of_below_listed_providers">You can also enjoy Willow if you have subscription of any of below listed providers</string>
+    <string name="welcome_to_willow_tv">Welcome to Willow TV</string>
+    <string name="login_or_sign_in">Login or Sign in</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="launch_fragment">Launch Fragment</string>
+    <string name="group">Group</string>
+
+
+    <!--for mobile-->
+    <string name="title_home_page">Explore</string>
+    <string name="title_videos_page">Videos</string>
+    <string name="title_results_page">Results</string>
+    <string name="title_fixtures_page">Fixtures</string>
+    <string name="title_settings_page">More</string>
+    <string name="error_title">Error!</string>
+    <string name="success_title">Success!</string>
+    <string name="tveUser">tveUser</string>
+    <string name="tveUser_id">User ID</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="batting">BATTING</string>
+    <string name="bowling">BOWLING</string>
+    <string name="r">R</string>
+    <string name="b">B</string>
+    <string name="_4s">4s</string>
+    <string name="_6s">6s</string>
+    <string name="sr">SR</string>
+    <string name="o">O</string>
+    <string name="m">M</string>
+    <string name="w">W</string>
+    <string name="econ">ECON</string>
+
+
+    <string name="subscribe_now">Subscribe Now</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="skip">Skip</string>
+    <string name="select_your_plan">Select Your Plan</string>
+    <string name="change_your_plan">Change Your Plan</string>
+    <string name="payment_succesful">Payment Successful!</string>
+    <string name="plan_change_succesful">Plan Change Successful!</string>
+    <string name="scan_qr_for_payment">Scan QR For Payment</string>
+    <string name="plan">Plan</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="price">Price</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="renewal_date">Renewal Date</string>
+    <string name="renewal_price">Renewal Price</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="home_of_cricket">Home of Cricket</string>
+    <string name="going_premium">Going Premium</string>
+    <string name="getting_your_premium_discovery_plus_subscription_ready">Getting your Premium Discovery Plus subscription ready.</string>
+    <string name="payment_unsuccessful">Payment Unsuccessful</string>
+    <string name="transaction_unsuccessful_mgs">Your transaction was unsuccessful due to technical error. Please try again.</string>
+    <string name="please_try_again">Please try again</string>
+
+    <string name="tv_providers">Tv Providers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="account_detail">Account Detail</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="subscription_details">Subscription Details</string>
+    <string name="logout">Logout</string>
+    <string name="cancel_subscriptions">Cancel Subscriptions</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="cancel_your_subscription">Cancel your Subscription</string>
+    <string name="subscripe_active">Subscription active </string>
+    <string name="subscripe_till">Subscription till </string>
+    <string name="Unsubscribed">Subscription deactivate</string>
+    <string name="logout_title">Sign out form your account</string>
+    <string name="logout_disc">You will have to sign in again to access your favourite content.</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="cancel">Cancel</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="unsbscripe_disc">You will have to sign in again to access your favourite content.</string>
+    <string name="unsbscripe_title">Are you sure to cancel subscription?</string>
+    <string name="scan_the_qr_code_with_your_mobile">Scan the QR code with your mobile</string>
+    <string name="nil">nil</string>
+    <string name="optional">Optional </string>
+    <string name="splash_screen">Splash screen</string>
+    <string name="current_plan">Current Plan:</string>
+    <string name="new_plan">New Plan:</string>
+    <string name="confirm_change">Confirm Change</string>
+    <string name="match_details">MATCH DETAILS</string>
+    <string name="points_table">Point Table</string>
+    <string name="video_not_found">Video Not Found</string>
+    <string name="no_match_today">No Match Today!</string>
+    <string name="_404_page_not_found">404: Page not Found</string>
+    <string name="somthing_went_wrong">Something Went Wrong</string>
+    <string name="fall_of_wickets">Fall of wickets:</string>
+    <string name="toss">Toss</string>
+    <string name="season">Season</string>
+    <string name="player_of_the_match">Player Of The Match</string>
+    <string name="match_days">Match days</string>
+    <string name="total">Total</string>
+    <string name="back">Back</string>
+</resources>

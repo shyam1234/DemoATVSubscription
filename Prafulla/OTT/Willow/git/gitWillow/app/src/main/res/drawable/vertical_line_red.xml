@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="left" android:right="@dimen/dimen_48dp">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/nav_menu_vertical_line_width" />
+            <solid android:color="@color/nav_menu_vertical_lin_color" />
+        </shape>
+    </item>
+
+</layer-list>

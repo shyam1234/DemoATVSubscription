@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "539936286622",
+    "project_id": "willowanalytics-173004",
+    "storage_bucket": "willowanalytics-173004.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539936286622:android:5d42ede251c586af32d88f",
+        "android_client_info": {
+          "package_name": "tv.willow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539936286622-c72ls6i51hipskt37lstrmlbgo9jm9ts.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tv.willow",
+            "certificate_hash": "26c0c7e85e3faf016aca6dd90139ed7089a661a8"
+          }
+        },
+        {
+          "client_id": "539936286622-pd2rm0gkvqnop094tdjt4rem2l5e61jr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeY0Hyir9SM9Yn4YfGOIMNl00zpOmXduQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539936286622-pd2rm0gkvqnop094tdjt4rem2l5e61jr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539936286622-fridc9va855d01be4s2oo2256l9go6da.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "tv.willow",
+                "app_store_id": "370916083"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

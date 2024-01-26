@@ -1,0 +1,182 @@
+{
+  "appVersion": "2.0",
+  "appEnvironment": "production",
+  "appVersionCode": 2,
+  "iapEnabled": true,
+  "pollerEnabled": true,
+  "tveAuthCheckInterval": 172800,
+  "pollerInterval": 60,
+  "liveDataRefreshInterval": 20,
+  "oldAppVersionNotAllowed": false,
+  "newAppVersion": "4.0",
+  "inAPProductId": {
+    "US": [
+      {
+        "productId": "willow_premium_subscription_dollar_10",
+        "title": "Monthly",
+        "details": [
+          "Willow Monthly Subscription",
+          "Enjoy Live Cricket",
+          "Watch Replay and Highlights in HD",
+          "Interactive Scorecards",
+          "Enjoy cricket on your mobile, ott and website"
+        ],
+        "productPrice": "$9.99"
+      }
+    ],
+    "CA": [
+      {
+        "productId": "willow_premium_subscription_dollar_10",
+        "title": "Monthly",
+        "details": [
+          "Willow Monthly Subscription Canada",
+          "Enjoy Live Cricket",
+          "Watch Replay and Highlights in HD",
+          "Interactive Scorecards",
+          "Enjoy cricket on your mobile, ott and website"
+        ],
+        "productPrice": "$7.99"
+      }
+    ]
+  },
+  "dfpTag": "https://pubads.g.doubleclick.net/gampad/live/ads?sz=300x400|300x415|320x240|320x480|360x480|400x300|420x315|420x320|480x480&iu=/7176/WillowTV/WillowTV_ROS/WillowTV_ROS_CTV_Video&impl=s&gdfp_req=1&env=vp&ad_rule=0&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&ad_type=skippablevideo&max_ad_duration=30000",
+  "couponCodeDaysCount": 0,
+  "couponCodeEnabled": true,
+  "enableLiveDfpForAll": false,
+  "enableVodDfpForAll": true,
+  "iapRestoreEnabled": true,
+  "tveProvidersList": "Optimum, Spectrum, Dish, Fios, Optimum TV, Xfinity",
+  "tveMsg": "Visit https://www.willow.tv/activate_tv_provider on a web browser or a mobile device. Enter the activation code below and login with your TV provider on the web browser. \n\nOnce you are logged in on the web browser, select the Continue button below to complete the login process. \n\nOnce you are logged in, you will be able to watch Live streaming, highlights and replays in HD on your Device.",
+  "navigation": {
+    "navigationTabs": [
+      {
+        "id": "1",
+        "name": "Explore",
+        "screenType": "explore",
+        "ico": {
+          "active": "/apps/icons/ott/home-ico-active.png",
+          "inactive": "/apps/icons/ott/home-ico.png"
+        },
+        "navUrl": "/apps/explore.json.gz",
+        "cc": [
+          "US",
+          "CA"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Videos",
+        "screenType": "videos",
+        "ico": {
+          "active": "/apps/icons/ott/video-ico-active.png",
+          "inactive": "/apps/icons/ott/video-ico.png"
+        },
+        "navUrl": "/apps/videos.json.gz",
+        "cc": [
+          "US",
+          "CA"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Fixtures",
+        "screenType": "fixtures",
+        "ico": {
+          "active": "/apps/icons/ott/fixtures-ico-active.png",
+          "inactive": "/apps/icons/ott/fixtures-ico.png"
+        },
+        "navUrl": "/apps/fixtures.json.gz",
+        "cc": [
+          "US",
+          "CA"
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Results",
+        "screenType": "results",
+        "ico": {
+          "active": "/apps/icons/ott/watchlist-ico-active.png",
+          "inactive": "/apps/icons/ott/watchlist-ico.png"
+        },
+        "navUrl": "/apps/results.json.gz",
+        "cc": [
+          "US",
+          "CA"
+        ]
+      }
+    ],
+    "navigationTabsOrder": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "apiConfig": {
+    "dynamicUrl": {
+      "development": "https://ddev.willow.tv",
+      "staging": "https://dallas1.willow.tv",
+      "production": "https://ws.willow.tv"
+    },
+    "deeplinkDomain": {
+      "development": "https://ddev.willow.tv/",
+      "staging": "https://dallas1.willow.tv/",
+      "production": "https://www.willow.tv/"
+    },
+    "staticUrl": {
+      "development": "https://static.willow.tv",
+      "staging": "https://static.willow.tv",
+      "production": "https://static.willow.tv"
+    },
+    "imageUrl": {
+      "development": "https://img.willow.tv",
+      "staging": "https://img.willow.tv",
+      "production": "https://img.willow.tv"
+    },
+    "pollerUrl": {
+      "development": "https://plrdev.willow.tv",
+      "staging": "https://plrdev.willow.tv",
+      "production": "https://plrdev.willow.tv"
+    }
+  },
+  "tveProviders": "https://img.willow.tv/apps/tveprovider_iptv_nd.png",
+  "subscriptionBaseUrl": "https://www.willow.tv",
+  "subscriptionBanner": "https://img.willow.tv/apps/sub-scr-br.png",
+  "countryCheckEndPoint": "https://ws.willow.tv/countryCode.asp",
+  "userAdsConfig": "https://static.willow.tv/apps/conf/userAdsConfig.json",
+  "helpAndFAQUrl": "https://static.willow.tv/apps/info/AndroidTV.json",
+  "show_watch_later": false,
+  "show_bookmark": false,
+  "show_cancel_subscription": false,
+  "show_manage_subscription": false,
+  "continue_watching": false,
+  "show_watch_later_api": "",
+  "show_bookmark_api": "",
+  "continue_watching_api": "",
+  "messages": {
+    "cannotMakePayments": "Payment is not allowed on this device",
+    "pollerTitle": "Multiple Streaming Error",
+    "pollerDescription": "You have started streaming from another device. Willow supports only single stream per authenticated user.",
+    "needSubscription": "Your account does not have subscription. Please subscribe to get access to premium videos.",
+    "iapDescription": " Full Access to Willow website, mobile apps & IPTV's\n Watch Live Cricket in HD \n Interactive Scorecard and Commentary \n Replays and Highlights",
+    "iapSuccess": "Thank you for purchasing Willow Premium Subscription.",
+    "iapError": "Could not purchase willow subscription. Please try again or contact our support team.",
+    "geoBlock": "Willow app is not available in your region.",
+    "playbackFailMsg": "Could not play the video. Please try again later.",
+    "matchNotFound": "Could not get match details. Please try again later.",
+    "passwordResetFail": "Could not reset the password.",
+    "emptyCredentials": "Please provide all details.",
+    "wrongCredentials": "Please provide valid details.",
+    "emptyCoupon": "Please enter the coupon code.",
+    "wrongCoupon": "Please provide the valid code.",
+    "tveLoginInstruction": "Time Warner Cable and Bright House Networks subscribers may choose Spectrum to sign in.",
+    "matchCenterDataError": "Match data not available, Please try again later.",
+    "tveOnlyMessage": "TV EVERYWHERE ONLY",
+    "appleSigninFailure": "Apple Sign in Failure",
+    "inputEmail": "Please enter your email",
+    "inputPassword": "Please provide your willow password to continue",
+    "createAccount": "You account doesn't exist with Willow. Please sign up to create new account.",
+    "iapDescriptionDetail": "The Willow premium subscription is available for USD $9.99/month and there is no free trial period associated with the Willow premium subscription. \n \nThe Willow premium subscription will be automatically renewed every month unless auto-renew is turned off at least 24 hours before the end of the current period. \n \nPayment will be charged to Google Account at the confirmation."
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/window_bg_color"
+    tools:context=".tv.ui.pointtable.PointTableFragment"
+    android:orientation="vertical">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height= "30dp"
+       android:text="@string/points_table"
+       android:textColor="@color/white"
+       style="@style/TvFontFamilyStyle"
+       android:textSize="@dimen/text_14sp"
+       android:gravity="center_vertical"
+       android:background="@color/point_table_text_bg_color"
+       android:paddingHorizontal="@dimen/dimen_10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_30dp"
+    android:id="@+id/itemView"
+    android:focusable="true"
+    android:background="@drawable/tabs_selector"
+    android:layout_marginVertical="@dimen/dimen_3dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        tools:text="Jan 08, Tue @ 12:30PM"
+        android:textSize="@dimen/dimen_14sp"
+        android:paddingStart="3dp"
+        android:id="@+id/txtDateTime"
+        android:textColor="@color/neutral_grey"
+        style="@style/TvFontFamilyStyleRegular"/>
+</LinearLayout>
