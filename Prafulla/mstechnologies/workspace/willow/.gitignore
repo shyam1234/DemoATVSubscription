@@ -1,6 +1,0 @@
-app/build/
-/local.properties
-.gradle/
-.idea/
-/app/release/app-release.apk
-/app/release/output-metadata.json
