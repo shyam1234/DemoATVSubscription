@@ -13,6 +13,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import java.util.concurrent.atomic.AtomicBoolean
+import kotlin.coroutines.resume
+import kotlin.coroutines.suspendCoroutine
 
 class BillingRepository(
     private val context: Context,
@@ -28,28 +31,34 @@ class BillingRepository(
         billingClient.makePurchase(activity, PRODUCT_ID)
     }
 
-    override suspend fun onPurchaseCallback() : Flow<PurchaseState> {
-        billingClient.registerCallback(object : GoogleIAPHelper.IAPCallback{
-            override fun onPurchaseSuccess(
-                responseCode: Int,
-                purchaseList: MutableList<Purchase>?
-            ) {
-              flow{
-                  emit(PurchaseState.Success(responseCode, purchaseList))
-              }
-            }
+    override suspend fun onPurchaseCallback(): Flow<PurchaseState> = flow {
+        emit(PurchaseState.Loading(null))
 
-            override fun onPurchaseFailed(responseCode: Int, message: String?) {
-                flow{
-                    emit(PurchaseState.Failure(responseCode, message ))
+        val result = suspendCoroutine<PurchaseState> { continuation ->
+            val isResumed = AtomicBoolean(false) // Use AtomicBoolean to track state
+
+            billingClient.registerCallback(object : GoogleIAPHelper.IAPCallback {
+                override fun onPurchaseSuccess(
+                    responseCode: Int,
+                    purchaseList: MutableList<Purchase>?
+                ) {
+                    if (isResumed.compareAndSet(false, true)) {
+                        continuation.resume(PurchaseState.Success(responseCode, purchaseList))
+                    }
                 }
-            }
 
-        })
-        return flow{
-            emit(PurchaseState.Loading(null))
+                override fun onPurchaseFailed(responseCode: Int, message: String?) {
+                    if (isResumed.compareAndSet(false, true)) {
+                        continuation.resume(PurchaseState.Failure(responseCode, message))
+                    }
+                }
+            })
         }
+
+        emit(result)
     }
+
+
 
     override fun dispose() {
         billingClient.onDestroyConnection()

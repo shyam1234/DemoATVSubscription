@@ -42,7 +42,7 @@ class MainViewModel(
                     }
                     is PurchaseState.Success -> {
                         _isPurchaseInProgress.value = false
-                        delay(100)
+                        delay(500)
                         purchaseState.purchaseList?.forEach {
                             when(it.purchaseState){
                                 Purchase.PurchaseState.PURCHASED -> {
