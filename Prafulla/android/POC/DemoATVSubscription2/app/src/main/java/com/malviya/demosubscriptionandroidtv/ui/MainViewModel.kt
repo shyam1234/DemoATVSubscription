@@ -75,7 +75,9 @@ class MainViewModel(
 
     fun onSubscriptionBtnClicked(){
         viewModelScope.launch {
+            _isPurchaseInProgress.value = true
             googleIAPUserCases.execute()
+            _text.value = "Proceeding to purchase...."
         }
     }
 
