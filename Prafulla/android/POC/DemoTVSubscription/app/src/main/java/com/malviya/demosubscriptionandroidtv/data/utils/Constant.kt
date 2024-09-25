@@ -1,1 +1,0 @@
-const val PRODUCT_ID : String = "prod_test2"
