@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">DemoATVSubscription</string>
-    <string name="subscription">Subscription</string>
-    <string name="demo_google_subscription_iap">Demo Google Subscription (IAP)</string>
-</resources>
