@@ -7,9 +7,10 @@ import com.malviya.demosubscriptionandroidtv.bindings.decorators.UIDecorator
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.malviya.demosubscriptionandroidtv.databinding.ActivityMainBinding
 import org.koin.android.ext.android.inject
+import org.koin.core.parameter.parametersOf
 
 class MainActivity: AppCompatActivity() {
-    private val viewModel by viewModel<MainViewModel>()
+    private val viewModel: MainViewModel by viewModel { parametersOf(this) }
     private lateinit var binding: ActivityMainBinding
 //    val defaultUIDecorator: UIDecorator by inject()
 //    val greenUIDecorator: UIDecorator by inject()
@@ -22,7 +23,6 @@ class MainActivity: AppCompatActivity() {
         binding.viewModel = viewModel
         setContentView(binding.root)
         registerObserver()
-        instance = this
     }
 
     private fun registerObserver() {
@@ -33,10 +33,6 @@ class MainActivity: AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-    }
-
-    companion object {
-        var instance: Activity? = null
     }
 
 }

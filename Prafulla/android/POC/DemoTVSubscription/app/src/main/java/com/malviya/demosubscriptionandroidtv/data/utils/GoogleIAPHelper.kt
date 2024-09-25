@@ -130,11 +130,8 @@ class GoogleIAPHelper : PurchasesUpdatedListener {
 
         Timber.d("IAP >>> 5a. initiating billing flow")
         //launch billing flow
-       // billingClient?.launchBillingFlow(activity, billingFlowParams)
-         MainActivity.instance?.let {
-             _purchaseUpdates.tryEmit(PurchaseState.Loading("Initiating billing flow..."))
-            billingClient?.launchBillingFlow(it, billingFlowParams)
-        }
+        _purchaseUpdates.tryEmit(PurchaseState.Loading("Initiating billing flow..."))
+        billingClient?.launchBillingFlow(activity, billingFlowParams)
     }
 
     /**

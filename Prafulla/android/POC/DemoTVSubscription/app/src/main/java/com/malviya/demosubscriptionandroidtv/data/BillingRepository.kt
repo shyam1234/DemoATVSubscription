@@ -10,7 +10,6 @@ import kotlinx.coroutines.flow.Flow
 
 class BillingRepository(
     private val context: Context,
-    private val activity: Activity,
     private val billingClient: GoogleIAPHelper
 ) : GoogleIAPUserCases {
 
@@ -18,7 +17,7 @@ class BillingRepository(
         billingClient.setupBillingClient(context)
     }
 
-    override suspend fun execute() {
+    override suspend fun execute(activity: Activity) {
         billingClient.makePurchase(activity, PRODUCT_ID)
     }
 

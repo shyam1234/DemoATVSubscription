@@ -11,9 +11,6 @@ val dataModule = module {
         GoogleIAPHelper()
     }
     single {
-        MainActivity()
-    }
-    single {
-        BillingRepository(androidContext(), get<MainActivity>(), get<GoogleIAPHelper>())
+        BillingRepository(androidContext(), get<GoogleIAPHelper>())
     }
 }

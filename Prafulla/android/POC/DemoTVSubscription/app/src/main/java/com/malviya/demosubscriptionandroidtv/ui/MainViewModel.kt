@@ -12,7 +12,8 @@ import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.launch
 
 class MainViewModel(
-    val googleIAPUserCases : GoogleIAPUserCases
+    private val activity: MainActivity,
+    private val googleIAPUserCases : GoogleIAPUserCases
 ) : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "Click to Subscribe"
@@ -82,7 +83,7 @@ class MainViewModel(
     fun onSubscriptionBtnClicked(){
         viewModelScope.launch {
             _isPurchaseInProgress.value = true
-            googleIAPUserCases.execute()
+            googleIAPUserCases.execute(activity)
         }
     }
 
