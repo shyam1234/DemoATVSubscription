@@ -5,11 +5,14 @@
 DemoATVSubscription is a sample project that demonstrates a subscription-based model for an ATV (Android TV) IAP service. 
 Use DemoTVSubscription folder to get the latest codebase.
 
+In this video, explained 2 flows:
+- Fresh subscription (first time)
+- Already subscribed 
+
 Here is the recorded video to show the flow:
 
 
 https://github.com/user-attachments/assets/5b9579b5-2636-4954-ac56-fe1ab3d45c65
-
 
 
 ## Features
